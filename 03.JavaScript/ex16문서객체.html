@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- p.602  -->
+    <h1 id = "msg"> 🌴날씨가 정말 맑네요🌴</h1>
+    <p id = "msg2">  
+        🍽️오늘 점심은 ..?!
+        <p>🍽️오늘 점심은 ..?! </p>
+      
+    </p>
+    <script>
+        //HTML 문서 내 태그를 제어하려면 가장 먼저 해야하는 것
+        // -> Html객체에 접근🌟
+        //document : 현재 HTML 문서
+        //.getElementById("msg") : id가 "msg"인 html객체를 접근
+        //접근하고자 하는 id의 이름을 넣음.
+        const msg = document.getElementById("msg");
+        const msg2 = document.getElementById("msg2");
+        console.log("접근한 객체: ", +msg);
+        console.log(msg);
+        //HTML객체. innerText : HTML태그의 컨텐츠를 문자열로 반환하는 속성.
+        console.log(msg.innerText);
+        console.log(msg.innerHTML);
+
+        msg.innerText = " 해가 떠있네요";
+        // msg.innerText = "<a href = '#'>해가 뜰까요? </a>";인식못함.
+        // innertext는 해당 태그의 내용을 변경할 때
+        // innerhtml은 해당 태그의 내용과 태그를 적용할 때
+        msg.innerHTML = "<a href ='#'>해가 뜰까요? </a>";
+
+        //id가 "msg2"인 HTML 객체의 내용을 접근
+        console.log(msg2.innerText);
+        console.log(msg2.innerHTML);
+        
+
+    </script>
+</body>
+</html>

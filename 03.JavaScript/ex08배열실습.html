@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let fruits = ["apple", "avocado", "banana", "blueberry", "cherry", 
+    "dragon fruit", "fig", "grape", "kiwi", "lime", "mango", "orange", 
+    "oriental melon", "pear", "peach", "pineapple", "shine muscat",
+     "strawberry", "tomato", "water melon", "yuja"];
+     // 1)
+     fruits.pop();
+     console.log(fruits);
+     //2)
+     fruits.push("grapefruit");
+     console.log(fruits);
+     //3)
+     fruits.push("cherry tomato", "pine nut", "korean blackberry");
+     console.log(fruits);
+     //4)
+     let isCheck = fruits.includes("orange");
+     console.log(isCheck); // console.log(fruits.includes("orange"));
+     //5)
+     let isCheck1 = fruits.includes("kiwi");
+     console.log(isCheck1);
+     //6)
+     // let index = fruits.indexOf("water melon")
+     // console.log(index);
+     // fruits[index] = "melon";
+     fruits[19] = "melon";
+     console.log(fruits);
+     //7)
+     fruits.splice(9,3);
+     console.log(fruits);
+     //8)
+     fruits.splice(13,7);
+     console.log(fruits);
+     //9)
+     let startIndex = fruits.indexOf("pear");
+     let endIndex = fruits.indexOf("pineapple");
+     let new_fruits = fruits.slice(startIndex, endIndex+1);
+     console.log(new_fruits);
+     
+     </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  아이디 선택자와 클래스 선택자 
+                : 특정요소에 디자인을 주고 싶을 때 사용, 특정요소를 구분할 때  */
+    /* #은 아이디 지칭자?! */
+        #apple{
+               color : red;  
+                }
+        #kiwi{
+            color : green;
+        }
+        /*  딱 한번만 사용할 때는 아이디 선택자, 중복되는게 여러개 있을 때는  */
+        #banana{
+            color: rgb(227, 227, 17);
+        }
+        .blueberry{
+            color: rgb(75, 28, 205)
+        }
+        .kiwi{
+            color: green;
+        }
+        .text{
+            font-size : 30px;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <h1 id ="apple">사과</h1>
+    <h1 id ="banana">바나나</h1>
+    <h1 id ="blueberry">블루베리</h1>
+    <h1 id ="kiwi">키위</h1>
+    <ul>
+        <li class ="apple"> 사과</li>
+        <li class ="banana">바나나 </li>
+        <li class ="blueberry"> 블루베리 </li>
+        <li class ="kiwi text"> 키위 </li>
+    </ul>
+</body>
+</html>

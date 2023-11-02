@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 입력 요소의 데이터 접근하기</h1>
+    
+    <form action = " "> 
+        <input type = "text" id = "user-input" value = > 
+        <input type ="button"  id = "btn" value = "출력">
+    </form>
+    <p id= "msg"></p>
+    
+    <script>
+        //이벤트 & 이벤트 핸들러
+        //1) 이벤트 : 웹 페이지에서 마우스, 키보드 입력, 스크롤 등의 행위
+        //2) 이벤트 핸들러: 이벤트가 감지되었을 때, 동작하는 함수 p.541
+        const userInput = document.getElementById("user-input");
+        const btn = document.getElementById("btn");
+        const msg = document.getElementById("msg");
+        let getValue = function(){
+            //사용자가 입력한 값을 접근하는 방법
+            //시작 태그와 끝태그가 있어야지 innertext사용 가능
+            // - 입력요소.value
+            // - 이 외 select, textarea도 value로 접근.
+            console.log(userInput.value);
+            msg.innerText = userInput.value;
+        }
+
+        // 버튼 객체에 이벤트 적용하는 법1 p547
+        //이건 onclick만 가능하다.
+        // btn.onclick = function(){
+        //     console.log("함수실행");
+        // }
+
+        //버튼 객체에 이벤트 적용하는 방법2 p.616
+        //딱 하나에 대한 제한은 없고 바꾸고 싶으면 click 말고 mouseover(마우스를 올리면 동작)..etc사용 가능하다.
+        // btn.addEventListener("click",function(){
+        //     console.log("함수실행1!");
+        // });
+
+        //미리 만들어진 함수를 호출하는 방법
+        //클릭하면 get value함수로 감.
+        // btn.addEventListener("click",getValue); 
+        //p.541 이벤트 
+        userInput.addEventListener("keyup",getValue);
+
+    
+    </script>
+</body>
+</html>

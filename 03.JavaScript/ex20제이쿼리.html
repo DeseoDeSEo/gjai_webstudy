@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id ="tit">jQuery </h1>
+    <script src=" ./js/jquery-3.7.0.js"></script>
+    <script>
+        //jQuery문법
+        //$로 시작함.(=jQuery 객체를 의미)
+        const $h1Tag = $("#tit");//함수를 실행하겠다. h1은 선택자를 의미함. <h1> jQuery</h1>을 의미함.
+        // $(Css선택자) : 선택자에 해당하는 모든 HTML객체를 배열 형태로 반환하는 함수
+        console.log($h1Tag);
+        //h1태그의 내용 접근하는 함수
+        //JavaScript: innerText, innerHTML로 태그의 속성에 접근
+
+        console.log($h1Tag.text());
+        console.log($h1Tag.html());
+         // h1태그의 내용을 변경할 때
+         $h1Tag.text("변경성공!");
+       // $h1Tag.html("<a href = '#'>변경성공!</a> ")
+        //h1태그 스타일 변경하는 함수
+        $h1Tag.css({
+            color : "green",
+            backgroundColor: "yellow"
+        });
+        //h1태그 이벤트 적용하는 함수
+        $h1Tag.on("click",function(){
+            alert("클릭이벤트 실행!"); //클릭 하면 알림창이 뜸.
+        });
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 계층선택자 : 위치를 기준으로 디자인을 적용.
+                body       |
+                div        | 
+             p      span
+    자손선택자*/
+    /* div p {
+        color : red;
+    } */
+    /* 자식 */
+    div > p {
+        color : blue;
+    }
+    /* 근접 후행 선택자 (p태그 옆에 있는 span태그에 적용하겠다.) */
+    /* p+span{
+        color: red;
+    } */
+    /* 후행 선택자 (p태그 뒤에 오는 모든 span태그 적용*/
+    p~span{
+        color:red;
+    }
+    
+    </style>
+</head>
+<body>
+    <!--  p태그는 자손들에게 디자인을 적용. -->
+    <p> 송아지 </p>
+    <div>
+        <p> 강아지 </p>
+        <table>
+            <tr>
+                <td>
+                    <p> 병아리</p>
+                    <!-- 병아리는 div안에 있기에 자손이라서 빨간색이 됨. -->
+                </td>
+            </tr>
+        </table>
+        <span>고양이</span>
+    </div>
+
+    <p>까르보나라</p>
+    <!-- 토마토만 까르보나라 바로 밑에 있음. -->
+    <span>토마토</span>
+    <span>바질</span>
+    <span>바지락</span>
+
+
+
+
+
+
+
+
+</body>
+</html>

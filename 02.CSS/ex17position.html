@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width : 200px;
+            height: 200px;
+        }
+        #div1 {
+            background-color: lightpink;
+        }
+        #div2 {
+            background-color: darkorchid;
+            position:relative;
+            bottom: 30px;
+            left: 100px;
+            /* position은 주변을 신경쓰지 않고 원하는 위치로 이동 가능.
+            - relative는 현재 위치를 기준으로 이동.
+            bottom을 두고 위로 30px올라감. 왼쪽은 왼쪽을 밀어내서 오른쪽으로 이동함.
+            - absolute : 이동 시작 기준점이 무조건 왼쪽 가장 상단임. */
+        }
+        #div3{
+            background-color: green;
+            height : 300px;
+            position : fixed;
+            top:0px;
+            /* 윗쪽으로 딱 붙게 됨 */
+            right:0px;
+            /* 오른쪽으로 딱 붙게 됨. */
+            /* fixed는 메뉴바나 움직여도 따라오는 것을 만들 때 사용함. */
+        }
+    </style>
+</head>
+<body>
+    <div id = "div1"> </div>
+    <div id = "div2"> </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id = "div3"></div>
+</body>
+</html>

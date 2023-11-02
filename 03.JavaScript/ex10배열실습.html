@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> //실습문제
+    //10개의 랜덤숫자를 가진 배열을 생성 후, 가장 큰 수를 출력해보기.
+    let arr  = [];
+    let max = arr[0];
+    for(let i =0; i<10; i++){
+        arr[i] =parseInt(Math.random()*100)+1;
+
+        for(let j =0; j<i; j++){
+            if(arr[i] === arr[j]){
+                i--;
+            }
+        }
+    }
+    for(let i=1; i<arr.length; i++){
+        if(max<arr[i]){
+            max = arr[i];
+        }
+
+    }
+        
+        console.log(`${arr}에서 가장 큰 수는 ${max}입니다.);
+
+
+
+
+    </script>
+</body>
+</html>

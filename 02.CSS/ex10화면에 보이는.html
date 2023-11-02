@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    h3{
+        display:inline ;
+        /* 이렇게하면 딱 자기 크기만큼만 차지하게 됨. */
+    }
+    /* 블록은 한 줄 다 차지함.
+    인라인 블록은 너비를 정할 수 있음.
+    none은 사라지는 거임. */
+    img{
+        display : inline-block;
+        width : 600px;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- 이미지나 span태그는 딱 자기 크기만 가지고 있음 -> 인라인 속성임.  -->
+    <h3>개미</h3>
+    <h3>참새</h3>
+    <h3>까마귀</h3>
+    <p>나는 줄바꿈이 됩니다.</p>
+    <src>가위</src>
+    <src>보자기</src>
+    <img src = "img.jpg">
+</body>
+</html>
